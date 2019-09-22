@@ -5,12 +5,12 @@
   "author": "Andrey Khomutovskiy",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gc-web-group/react-redux-template.git"
+    "url": "git+https://github.com/GCoder-13/react-redux-template.git"
   },
   "bugs": {
-    "url": "https://github.com/gc-web-group/react-redux-template/issues"
+    "url": "https://github.com/GCoder-13/react-redux-template/issues"
   },
-  "homepage": "https://github.com/gc-web-group/react-redux-template#readme",
+  "homepage": "https://github.com/GCoder-13/react-redux-template#readme",
   "scripts": {
     "build": "webpack --progress --config webpack/webpack.prod.js",
     "start": "webpack-dev-server --config webpack/webpack.dev.js",
