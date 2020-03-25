@@ -6,6 +6,6 @@ const Routes = () => (
   <Switch>
     <Route exact path="/" component={Main} />
   </Switch>
-)
+);
 
 export default Routes;

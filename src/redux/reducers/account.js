@@ -1,7 +1,7 @@
 import { ACCOUNTS } from '@/redux/actions/accounts';
 
 const initState = {
-  currentUser: 'Oleg',
+  currentUser: '',
 };
 
 export default (state = initState, { type, payload }) => {

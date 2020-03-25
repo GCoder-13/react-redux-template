@@ -10,8 +10,8 @@ import logoImg from '@/assets/images/logo.png';
 import st from './styles.scss';
 
 const selector = createSelector(
-  state => state.account,
-  account => ({
+  (state) => state.account,
+  (account) => ({
     currentUser: account.currentUser,
   }),
 );

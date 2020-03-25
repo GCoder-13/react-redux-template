@@ -9,7 +9,7 @@ import store, { history } from '@/redux/store';
 import Routes from '@/routes';
 import '@/assets/styles/main.scss';
 
-const Root = props => (
+const Root = (props) => (
   <Provider store={store}>
     <Router history={history}>
       { props.children }
