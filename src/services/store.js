@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import { createLogger } from 'redux-logger';
 import { createBrowserHistory } from 'history';
-import rootReducer from '@/redux/reducers';
+import rootReducer from '@/services/reducers';
 
 export const history = createBrowserHistory();
 
@@ -21,9 +21,9 @@ const enhancers = composeEnhancers(
 const store = createStore(rootReducer, enhancers);
 
 if (process.env.NODE_ENV === 'development' && module.hot) {
-  module.hot.accept('@/redux/reducers', () => {
+  module.hot.accept('@/services/reducers', () => {
     // eslint-disable-next-line global-require
-    const nextReducer = require('@/redux/reducers').default;
+    const nextReducer = require('@/services/reducers').default;
 
     store.replaceReducer(nextReducer);
   });

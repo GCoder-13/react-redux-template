@@ -1,4 +1,4 @@
-import { ACCOUNTS } from '@/redux/actions/accounts';
+import { createAccount } from '@/services/actions/accounts';
 
 const initState = {
   currentUser: '',
@@ -6,7 +6,7 @@ const initState = {
 
 export default (state = initState, { type, payload }) => {
   switch (type) {
-    case ACCOUNTS.CREATE:
+    case createAccount.toString():
       return {
         ...state,
         currentUser: payload,

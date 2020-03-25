@@ -5,7 +5,7 @@ import { createSelector } from 'reselect';
 import { EmailSvg, PhoneSvg } from '@/assets/icons';
 import { validationEmail, validationPhone } from '@/utils/validation';
 import { Button } from '@/components';
-import { createAccount } from '@/redux/actions/accounts';
+import { createAccount } from '@/services/actions/accounts';
 import logoImg from '@/assets/images/logo.png';
 import st from './styles.scss';
 
@@ -27,7 +27,7 @@ class Main extends Component {
   }
 
   componentDidMount() {
-    this.props.createAccount();
+    this.props.createAccount('Test');
   }
 
   handleChange = ({ target: { id, value } }) => {

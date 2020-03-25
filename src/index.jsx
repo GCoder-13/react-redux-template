@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 import { AppContainer } from 'react-hot-loader';
 import Redbox from 'redbox-react';
-import store, { history } from '@/redux/store';
+import store, { history } from '@/services/store';
 import Routes from '@/routes';
 import '@/assets/styles/main.scss';
 
@@ -51,5 +51,5 @@ if (process.env.NODE_ENV === 'development' && module.hot) {
     );
   });
 
-  module.hot.accept('@/redux/store');
+  module.hot.accept('@/services/store');
 }
